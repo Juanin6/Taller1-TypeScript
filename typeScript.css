@@ -13,12 +13,10 @@ body {
     font-family: "B612";
     font-size: 18px;
   }
-#card {
-    
-    margin-top:10%;
-    margin-bottom:1%;
-}
 #header{
     background-color: #123;
     display: flex;
+}
+#table {
+    margin-top: 1%;
 }
