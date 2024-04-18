@@ -32,10 +32,12 @@ function mostrarDatosSerie(series : Serie[]) :void {
 function showAverageSeason(series: Serie[]):void{
     let averageseason : number =0;
     let tbody = document.createElement("p");
+    let lengSerie : number =0
     for (let serie of series){
         averageseason += serie.seasons;
+        lengSerie +=1
     }
-    tbody.innerHTML=`<b>Average Seasons&nbsp;&nbsp;${averageseason}&nbsp;&nbsp</b> `;
+    tbody.innerHTML=`<b>Average Seasons&nbsp;&nbsp;${averageseason/lengSerie}&nbsp;&nbsp</b> `;
     averageTable.appendChild(tbody);
 }
 
